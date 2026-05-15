@@ -1,0 +1,17 @@
+@media screen and (max-width: 1300px) {
+    .pricing_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .pricing_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing_card {
+        width: 100%;
+    }
+}

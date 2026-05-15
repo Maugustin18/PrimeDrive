@@ -1,0 +1,222 @@
+/* CARS DISPLAY OPTIONS */
+.cars_filter_and_sort_section {
+    padding: 50px 0;
+}
+
+.cars_filter_content {
+    padding: 35px 20px;
+    box-shadow: 0 5px 40px rgba(0,0,0,.15);
+    /* background: var(--orange); */
+    border-radius: 20px;
+}
+
+.cars_filter_content .big_p{
+    padding: 0 0 25px;
+}
+
+.cars_filter_content, .cars_sort_content{
+    gap: 15px;
+}
+
+.cars_filter_content select, .cars_sort_content select{
+    height: 40px;
+    border: 1px solid var(--light-grey);
+}
+
+.filter_ops_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 15px;
+}
+
+.cars_filter_content p, .cars_sort_content p {
+    gap: 5px;
+}
+
+.cars_filter_content svg, .cars_sort_content svg{
+    height: 30px;
+}
+
+.filter_ops_content select {
+    border-radius: 8px;
+}
+
+/* .cars_apply_container {
+    display: flex;
+    justify-content: end;
+    padding: calc(var(--gap)/2) 0 0;
+}
+
+.cars_apply_container .round_btn{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    height: 48px;
+    width: 180px;
+    font-size: 16px;
+}
+
+.cars_apply_container .round_btn:hover{
+    color: var(--orange);
+    background-color: var(--black);
+}
+
+.cars_apply_container .round_btn:hover svg{
+    fill: var(--orange);
+} */
+
+#top{
+    scroll-margin: calc(var(--gap)*5);
+}
+
+/* CARS BLOCK NUMBER */
+.cars_block_number_content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 0 calc(var(--gap)*2);
+}
+
+.cars_block_number_content .round_btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.cars_block_number_content .round_btn:hover{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: var(--black);
+}
+
+.cars_block_number_content .round_btn.active {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+#groupNrs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#next, #prev {
+    display: none;
+}
+
+
+
+/* CARS GRID */
+.cars_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--gap)*1.5);
+    padding: 0 0 30px;
+}
+
+
+
+/* CAR CARDS */
+/* .car_card {
+    padding: var(--gap);
+    border: 2px solid var(--middle-grey);
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.car_card_bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffdf9a7e;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: var(--transition-one);
+}
+
+.car_card:hover .car_card_bg {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.car_card:hover {
+    border: 2px solid var(--orange);
+}
+
+.car_card_header {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding:  0 0 var(--gap);
+}
+
+.car_card_header img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.car_name {
+    height: 50px;
+}
+
+.car_name a{
+    font-size: 20px;
+}
+
+.car_details_list {
+    padding: calc(var(--gap)/2) 0;
+}
+
+.car_details_l_item {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.car_details_l_item .car_details_l_i_name, .car_details_l_item .car_details_l_i_data{
+    color: var(--grey);
+    line-height: 2.3;
+}
+
+.car_card_rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.car_card_rating svg{
+    fill: var(--orange);
+    height: 15px;
+}
+
+.car_card_rating svg:nth-child(5){
+    fill: var(--white);
+}
+
+.car_card_footer .orange_btn{
+    width: 100%;
+    background: none;
+    border: 1px solid var(--black);
+}
+
+.car_card_footer .orange_btn:hover{
+    background: var(--black);
+    color: var(--orange);
+}
+
+.car_card_footer .orange_btn:hover svg{
+    fill: var(--orange);
+} */

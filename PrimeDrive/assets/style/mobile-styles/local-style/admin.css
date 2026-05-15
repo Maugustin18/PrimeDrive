@@ -1,0 +1,16 @@
+@media screen and (max-width: 1197px) {
+    body * {
+        display: none;
+    }
+    body::before{
+        content: 'Nu e accesibil pe ecrane mici';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: var(--dark-grey);
+        font-weight: var(--bold-font-weight);
+    }
+    
+}

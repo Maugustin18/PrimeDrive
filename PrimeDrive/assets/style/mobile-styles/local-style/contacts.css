@@ -1,0 +1,30 @@
+@media screen and (max-width: 850px){
+    .contacts_content {
+        grid-template-columns: 1fr 2fr;
+        gap: calc(var(--gap) * 1);
+    }
+}
+
+@media screen and (max-width: 760px){
+    .contacts_content {
+        display: flex;
+        flex-direction: column;
+        /* gap: calc(var(--gap) * 1); */
+    }
+
+    .background_envelope {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact_form_input_group{
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--gap)/2.5);
+    }
+    
+    .contact_form_input_group textarea {
+        min-height: 150px;
+    }
+}

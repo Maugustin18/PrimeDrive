@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeDrive</title>
+    <link rel="stylesheet" href="../../assets/style/style.css">
+    <link rel="stylesheet" href="../../assets/style/mobile-styles/mobile-style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+</head>
+<body>
+    <!-- <div id="loader" class="loader">
+        <div class="loader_wrapper">
+            <div class="loader_content">
+                <div class="loader_outer_c">
+                    <div class="loader_inner_c"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="body_container" style="display: block;">
+        <div class="header_mobile_container header_mobile"></div>
+        <!-- <header id="stickyHeader"></header> -->
+        <main id="main"></main>
+        <div id="alert_block">
+            <div class="alert_container">
+                <div class="alert_list">  
+                </div>
+            </div>
+        </div>
+        <!-- <footer id="footer"></footer> -->
+        <div class="some_block" style="background-color: rgb(255, 255, 255); position: relative;">
+            <section id="admin_dashboard">
+                <div class="admin_d_block">
+                    <div class="admin_d_container">
+                        <div class="admin_d_grid">
+                            <div class="admin_d_side_bar">
+                                <div class="admin_d_side_menu_header_col1"></div>
+                                <div class="admin_d_side_menu_header_col2">
+                                    <p>Dashboards</p>
+                                </div>
+                                <div class="admin_d_icon_side_menu">
+                                    <div class="admin_d_icon_side_menu_wrapper">
+                                        <div class="admin_d_icon_side_menu_list">
+                                            <div class="admin_d_icon_side_menu_item">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                        <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z"/>
+                                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="admin_d_icon_side_menu_item admin_d_icon_side_menu_item_active">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514"/>
+                                                        <path d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="admin_d_icon_side_menu_item">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                        <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="admin_d_icon_side_menu_item">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="admin_d_icon_side_menu_item">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="admin_d_link_side_menu">
+                                    <div class="admin_d_link_side_menu_wrapper">
+                                        <div class="admin_d_link_side_menu_list">
+                                            <div class="admin_d_link_side_menu_item">
+                                                <a href="">Orders</a>
+                                            </div>
+                                            <div class="admin_d_link_side_menu_item">
+                                                <a href="">Archive</a>
+                                            </div>
+                                            <div class="admin_d_link_side_menu_item ">
+                                                <a href="">Clients</a>
+                                            </div>
+                                            <div class="admin_d_link_side_menu_item">
+                                                <a href="">Users</a>
+                                            </div>
+                                            <div class="admin_d_link_side_menu_item admin_d_link_side_menu_item_active">
+                                                <a href="">Cars</a>
+                                            </div>
+                                            <div class="admin_d_link_side_menu_item">
+                                                <a href="">Finances</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="admin_d_main_block">
+                                <header id="adminHeader">
+                                    <div class="admin_d_header_block">
+                                        <div class="admin_d_header_container">
+                                            <div class="admin_d_header_content">
+                                                <div class="admin_d_header_logo">
+                                                    <a href="../../index.html">
+                                                        <img src="../../assets/media/img/logo/prime1.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="admin_d_header_account">
+                                                    <div class="admin_d_header_account_icon">
+                                                        <a href="">
+                                                            <img src="https://images.pexels.com/photos/5288733/pexels-photo-5288733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="admin_d_header_account_data">
+                                                        <div class="admin_d_header_account_name">
+                                                            <a href="">
+                                                                <p>Daniel Hondo</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="admin_d_header_account_role">
+                                                            <a href="">
+                                                                <p>Admin</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div id="admin_d_content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- CARS SECTION -->
+                                    <div id="adminCarsSec">
+                                        <div class="admin_d_header admin_d_header_cars">
+                                            <p class="smaller_section_title">Cars</p>
+                                            <button class="add_car_btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                                </svg>
+                                                <span>Add car</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div id="admin_d_body">
+                                            <div class="admin_cars_stats_block">
+                                                <div class="admin_cars_stats_container">
+                                                    <div class="admin_cars_stats_content">
+                                                        <div class="admin_cars_stats_grid">
+                                                            <div class="admin_cars_stats_card admin_d_card">
+                                                                <p class="admin_cars_stats_card_title capitalise medium_p">
+                                                                    Total cars
+                                                                </p>
+                                                                <p class="admin_cars_stats_card_data bold_p">
+                                                                    120
+                                                                </p>
+                                                            </div>
+                                                            <div class="admin_cars_stats_card admin_d_card">
+                                                                <p class="admin_cars_stats_card_title capitalise medium_p">
+                                                                    In service
+                                                                </p>
+                                                                <p class="admin_cars_stats_card_data bold_p">
+                                                                    80
+                                                                </p>
+                                                            </div>
+                                                            <div class="admin_cars_stats_card admin_d_card">
+                                                                <p class="admin_cars_stats_card_title capitalise medium_p">
+                                                                    Available
+                                                                </p>
+                                                                <p class="admin_cars_stats_card_data bold_p">
+                                                                    35
+                                                                </p>
+                                                            </div>
+                                                            <div class="admin_cars_stats_card admin_d_card">
+                                                                <p class="admin_cars_stats_card_title capitalise medium_p">
+                                                                    Sold
+                                                                </p>
+                                                                <p class="admin_cars_stats_card_data bold_p">
+                                                                    5
+                                                                </p>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+
+
+
+                                                        <section class="cars_filter_and_sort_section">
+                                                            <div class="cars_filter_and_sort_block content_block">
+                                                                <form action="">
+                                                                    <div class="cars_filter_and_sort_wrapper">
+                                                                
+                                                                        <div class="cars_filter_content">
+                                                                            <div class="filter_ops_wrapper" id="top">
+                                                                                <div class="filter_ops_content">
+                                                                                    <select name="brand" id="brand">
+                                                                                        <option value="null" selected disabled>-Brand-</option>
+                                                                                        <option value="-1">Toate</option>
+                                                                                        
+                                                                                    </select>
+                                                                                    <select name="trans" id="trans">
+                                                                                        <option value="null" selected disabled>-Cutie-</option>
+                                                                                        <option value="-1">Toate</option>
+                                                                                        
+                                                                                    </select>
+                                                                                    <select name="airCond" id="airCond">
+                                                                                        <option value="null" selected disabled>-Aer Cond.-</option>
+                                                                                        <option value="undefined">Toate</option>
+                                                                                        <option value="true">Da</option>
+                                                                                        <option value="false">Nu</option>
+                                                                                    </select>
+                                                                                    <select name="sort" id="sort">
+                                                                                        <option value="1" selected disabled hidden>-Sortare-</option>
+                                                                                        <option value="1">Nume A -> Z</option>
+                                                                                        <option value="2">Nume Z -> A</option>
+                                                                                        <option value="3">Rating 1 -> 5</option>
+                                                                                        <option value="4">Rating 5 -> 1</option>
+                                                                                        <option value="5">Preț mic -> mare</option>
+                                                                                        <option value="6">Preț mare -> mic</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </section>
+
+
+                                                        <div class="search_car_block">
+                                                            <div class="search_car_container">
+                                                                <div class="search_car_content">
+                                                                    <form action="">
+                                                                        <div class="search_input_block">
+                                                                            <div class="search_input_icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <input type="text" placeholder="Find car...">
+                                                                        </div>
+                                                                        
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="admin_cars_cars_grid">
+                                                            <div class="admin_cars_cars_grid_header_row admin_cars_cars_grid_row">
+                                                                <div class="admin_cars_cars_grid_header_row_cell">
+                                                                    <p>Make & model</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_header_row_cell">
+                                                                    <p>Year</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_header_row_cell">
+                                                                    <p>Price</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_header_row_cell">
+                                                                    <p>Status</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_header_row_cell">
+                                                                    <p>Actions</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="admin_cars_cars_grid_body_row admin_cars_cars_grid_row">
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_model">
+                                                                    <img src="../../assets/media/img/cars/0/2.jpg" alt="">
+                                                                    <p><a href="">Dodge Viper</a></p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>2025</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>$30</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p class="car_availability">Available</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_actions">
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="admin_cars_cars_grid_body_row admin_cars_cars_grid_row">
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_model">
+                                                                    <img src="../../assets/media/img/cars/0/2.jpg" alt="">
+                                                                    <p><a href="">Dodge Viper</a></p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>2025</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>$30</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p class="car_availability">Available</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_actions">
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="admin_cars_cars_grid_body_row admin_cars_cars_grid_row">
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_model">
+                                                                    <img src="../../assets/media/img/cars/0/2.jpg" alt="">
+                                                                    <p><a href="">Dodge Viper</a></p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>2025</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>$30</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p class="car_availability">Available</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_actions">
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="admin_cars_cars_grid_body_row admin_cars_cars_grid_row">
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_model">
+                                                                    <img src="../../assets/media/img/cars/0/2.jpg" alt="">
+                                                                    <p><a href="">Dodge Viper</a></p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>2025</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p>$30</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell">
+                                                                    <p class="car_availability">Available</p>
+                                                                </div>
+                                                                <div class="admin_cars_cars_grid_body_row_cell admin_cars_cars_cell_actions">
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <button class="car_action">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                    
+
+
+                                            
+                                            
+                                                
+
+
+
+                                        </div>
+                                           
+                                    </div>
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <input type="hidden" value="pageLevelThree" id="pageType">
+    <input type="hidden" value="adminDashboard" id="pageKey">
+</body>
+    <!-- <script type="module" src="../../assets/script/actions/global/loader.js"></script> -->
+     <script type="module" src="../../assets/script/controller/C_authSession.js"></script>
+    <!-- <script type="module" src="../../assets/script/components/Header.js"></script> -->
+    <!-- <script type="module" src="../../assets/script/components/Footer.js"></script> -->
+    <!-- <script type="module" src="../../assets/script/actions/global/header.js"></script> -->
+</html>

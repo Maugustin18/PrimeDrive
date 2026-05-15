@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px) {
+    .reservation_pop_up {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .similar_cars_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .car_page_body_grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reservation_pop_up_form_row_1 {
+        flex-direction: column;
+    }
+
+    .reservation_pop_up {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .reservation_pop_up {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .car_page_body_grid_col_2_body_af_list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .car_page_body_grid_col_2_body_af_list_item{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .car_page_body_grid_col_2_subheader_grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .car_page_body_grid_col_2_subheader_col:last-of-type{
+        align-self: end;
+    } */
+}
+
+@media screen and (max-width: 750px) {
+    .reservation_pop_up_form_row_2, .similar_cars_content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .reservation_pop_up {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .car_page_body_grid_col_2_body_af_list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .reservation_pop_up {
+        width: 95%;
+    }
+}

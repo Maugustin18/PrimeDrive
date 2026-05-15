@@ -1,0 +1,20 @@
+@media screen and (max-width: 810px) {
+    .log_in_grid_block {
+        display: block;
+        min-height: 100vh;
+    }
+    
+    .log_in_grid_block_col_1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .password_log_in_opts {
+        flex-direction: column;
+    }
+    .log_in_grid_col_2_wrapper {
+        width: 100%;
+        padding: 50px 10% 40px;
+    }
+}

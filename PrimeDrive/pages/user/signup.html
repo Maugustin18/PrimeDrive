@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeDrive</title>
+    <link rel="stylesheet" href="../../assets/style/style.css">
+    <link rel="stylesheet" href="../../assets/style/mobile-styles/mobile-style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+     
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader_wrapper">
+            <div class="loader_content">
+                <div class="loader_outer_c">
+                    <div class="loader_inner_c"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <main id="main"></main>
+        <div id="alert_block">
+            <div class="alert_container">
+                <div class="alert_list">  
+                </div>
+            </div>
+        </div>
+        <!-- <div class="some_block" style="min-height: 60vh; background-color: rgb(255, 255, 255); position: relative;">
+            
+        </div> -->
+    </div>
+    <input type="hidden" value="pageLevelTwo" id="pageType">
+    <input type="hidden" value="login" id="pageKey">
+</body>
+    <script type="module" src="../../assets/script/actions/global/loader.js"></script>
+    <script type="module" src="../../assets/script/components/blocks/user/Signup_page/Signup.js"></script>
+    <script type="module" src="../../assets/script/actions/global/password.js"></script>
+    <script type="module" src="../../assets/script/controller/C_signup.js"></script>
+</html>

@@ -1,0 +1,89 @@
+@media screen and (max-width:1225px) {
+    .reservations_grid_row a:first-child {
+        display: none;
+    }
+
+    .reservations_grid_row {
+        display: grid;
+        grid-template-columns: .5fr 1.1fr .3fr .4fr;
+        gap: var(--gap);
+    }
+
+    .reservations_grid_row a:nth-of-type(2), .reservations_grid_row .price {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cars_sort_content {
+        display: flex;
+        align-items: center;
+    }
+
+    .cars_sort_content svg{
+        display: none;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .account_page_grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .account_page_grid_col_2_opts_data {
+        grid-template-columns: 1fr;
+    }
+
+    .account_page_grid_col_1_menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .account_page_grid_col_2_opts_data_input_group_security:first-of-type {
+        grid-column: unset;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .reservations_grid_row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .cars_sort_content select{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .account_page_grid_col_2_opts_picture_btns {
+        flex-direction: column;
+    }
+
+    .account_page_grid_col_1_menu {
+        grid-template-columns: 1fr;
+    }
+
+    .reservations_grid_row_data_row {
+        grid-template-columns: 1fr .5fr 2fr;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .reservations_grid_row_data_row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .account_page_grid_col_2_opts_picture {
+        flex-direction: column;
+    }
+
+    .account_page_grid_col_2_form_submit {
+        width: auto !important;
+    }
+}

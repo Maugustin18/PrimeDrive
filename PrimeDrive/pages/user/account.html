@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeDrive</title>
+    <link rel="stylesheet" href="../../assets/style/style.css">
+    <link rel="stylesheet" href="../../assets/style/mobile-styles/mobile-style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader_wrapper">
+            <div class="loader_content">
+                <div class="loader_outer_c">
+                    <div class="loader_inner_c"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="header_mobile_container header_mobile"></div>
+        <header id="stickyHeader"></header>
+        <main id="main"></main>
+        <div id="alert_block">
+            <div class="alert_container">
+                <div class="alert_list">  
+                </div>
+            </div>
+        </div>
+        <div id="reservation_pop_up_block">
+            <div class="reservation_pop_up_wrapper">
+                <div class="reservation_pop_up" id="reservation_pop_up">
+                    <div class="reservation_pop_up_content">
+                        <div class="reservation_pop_up_header">
+                            <button class="close_pop_up_btn" id="closePopUp">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="reservation_pop_up_body">
+                            <div class="reservation_pop_up_subheader">
+                                <p class="big_p">Schimbă poza de profil</p>
+                                <p class="small_p">Te rugăm să furnizezi un link pentru poza de profil</p>
+                            </div>
+                            <div class="reservation_pop_up_form">
+                                <form action="">
+                                    <input type="text" class="middle_radius_input outlined_input" placeholder="Link" id="pictureLink" required>
+                                    <button class="round_btn black_btn" id="changeProfilePictureBtn">Actualizează</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer"></footer>
+        <!-- <div class="some_block" style="min-height: 60vh; background-color: rgb(255, 255, 255); position: relative;">
+        </div> -->
+    </div>
+    <!-- <button class="log_out capitalise" id="logOutBtn">Log out</button> -->
+    <input type="hidden" value="pageLevelTwo" id="pageType">
+    <input type="hidden" value="account" id="pageKey">
+</body>
+    <script type="module" src="../../assets/script/actions/global/loader.js"></script>
+    <script type="module" src="../../assets/script/controller/C_authSession.js"></script>
+    <script type="module" src="../../assets/script/components/Header.js"></script>
+    <script type="module" src="../../assets/script/components/blocks/user/Account_page/Account.js"></script>
+    <script type="module" src="../../assets/script/components/Footer.js"></script>
+    <script type="module" src="../../assets/script/actions/account.js"></script>
+    <script type="module" src="../../assets/script/actions/global/password.js"></script>
+    <script type="module" src="../../assets/script/actions/global/header.js"></script>
+    <script type="module" src="../../assets/script/app/auth/account-app.js"></script>
+    <script type="module" src="../../assets/script/controller/C_account.js"></script>
+    <script type="module" src="../../assets/script/app/auth/logOut-app.js"></script>
+    <script type="module" src="../../assets/script/app/auth/auth-app.js"></script>
+</html>

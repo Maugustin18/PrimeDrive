@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeDrive</title>
+    <link rel="stylesheet" href="../../../../assets/style/style.css">
+    <link rel="stylesheet" href="../../../../assets/style/mobile-styles/mobile-style.css">
+    <link rel="stylesheet" href="../../../../assets/style/mobile-styles/local-style/admin.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader_wrapper">
+            <div class="loader_content">
+                <div class="loader_outer_c">
+                    <div class="loader_inner_c"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container" style="display: block;">
+        <div class="header_mobile_container header_mobile"></div>
+        <!-- <header id="stickyHeader"></header> -->
+        <main id="main"></main>
+        <div id="alert_block">
+            <div class="alert_container">
+                <div class="alert_list">  
+                </div>
+            </div>
+        </div>
+        <!-- <footer id="footer"></footer> -->
+        
+    </div>
+    <input type="hidden" value="pageLevelThree" id="pageType">
+    <input type="hidden" value="adminDashboard" id="pageKey">
+</body>
+    <script type="module" src="../../../../assets/script/actions/global/loader.js"></script>
+    <script type="module" src="../../../../assets/script/controller/C_authSession.js"></script>
+    <script type="module" src="../../../../assets/script/components/blocks/admin/general_pages/Newsletter_page/Newsletter.js"></script>
+    <script type="module" src="../../../../assets/script/actions/admin/sidebar.js"></script>
+    <script type="module" src="../../../../assets/script/controller/admin/C_adminMenu.js"></script>
+
+    <script type="module" src="../../../../assets/script/controller/admin/Newsletter_page/C_newsletter.js"></script>
+</html>

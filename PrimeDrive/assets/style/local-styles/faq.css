@@ -1,0 +1,67 @@
+.faq_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    padding: calc(var(--gap) * 3) 0;
+}
+
+.faq_col_text {
+    flex: 1;
+}
+
+.faq_content_header .medium_p {
+    padding: calc(var(--gap) /2) 0;
+    line-height: 1.7;
+    color: var(--grey);
+}
+
+.faq_q_block_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px calc(var(--gap) /1.5) 12px 0;
+    border-bottom: 1px solid var(--grey);
+    cursor: pointer;
+}
+
+.faq_q_block_header_text {
+    font-size: 18px;
+    font-weight: var(--normal-font-weight);
+    color: var(--grey);
+} 
+
+.faq_q_block_header_arrow svg {
+    fill: var(--light-grey);
+    height: 30px;
+    transition: var(--transition-one);   
+}
+
+.active_faq_q .faq_q_block_header_arrow svg {
+    transform: rotateZ(-90deg);
+}
+
+.faq_q_block_body {
+    padding: calc(var(--gap) /1.5) 0;
+    transition: var(--transition-one); 
+}
+
+.faq_q_block_body * {
+    color: var(--grey);
+}
+
+.faq_q_block:not(.active_faq_q) .faq_q_block_body{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.faq_col_img {
+    flex: 1;
+    height: 700px;
+    background: url('https://images.pexels.com/photos/1051072/pexels-photo-1051072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}

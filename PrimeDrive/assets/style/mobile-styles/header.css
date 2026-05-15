@@ -1,0 +1,29 @@
+
+@media screen and (max-width: 980px) {
+    /* HEADER */
+    .header_large {
+        display: none;
+    }
+
+    .header_mobile {
+        display: block;
+    }
+
+    .header_content_block_row_two {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .header_logo_container img{
+        width: 140px;
+    }
+
+    #nav_btn {
+        width: calc(var(--gap) * 1.2);
+        height: calc(var(--gap) * 1.2);
+        padding: 5px;
+        border: 1px solid var(--white);
+    }
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeDrive</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/mobile-styles/mobile-style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader_wrapper">
+            <div class="loader_content">
+                <div class="loader_outer_c">
+                    <div class="loader_inner_c"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_container">
+        <div class="admin_top_link_block"></div>
+        <div class="header_mobile_container header_mobile"></div>
+        <header id="header"></header>
+        <header id="fixedHeader"></header>
+        <main id="main"></main>
+        <div id="alert_block">
+            <div class="alert_container">
+                <div class="alert_list">  
+                </div>
+            </div>
+        </div>
+        <!-- <div class="some_block" style="min-height: 60vh; background-color: rgb(255, 255, 255); position: relative; border: 5px solid black;">
+            
+        </div> -->
+        <footer id="footer"></footer>
+    </div>
+    <input type="hidden" value="pageLevelOne" id="pageType">
+    <input type="hidden" value="cars" id="pageKey">
+</body>
+    <script type="module" src="../assets/script/actions/global/loader.js"></script>
+    <script type="module" src="./../assets/script/controller/C_authSession.js"></script>
+    <script type="module" src="../assets/script/components/Header.js"></script>
+    <script type="module" src="../assets/script/components/blocks/OurCars_page/OurCars.js"></script>
+    <script type="module" src="../assets/script/components/Footer.js"></script>
+
+    <script type="module" src="../assets/script/controller/C_cars.js"></script>
+    
+    <script type="module" src="../assets/script/actions/global/header.js"></script>
+    <!-- <script type="module" src="../assets/script/actions/sort-filter-cars.js"></script> -->
+     <script type="module" src="../assets/script/controller/C_adminHeader.js"></script>
+</html>

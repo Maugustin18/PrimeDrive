@@ -1,0 +1,280 @@
+/* USER ACCOUNT PAGE */
+.account_page_block {
+    padding: calc(var(--gap)*3) 0;
+}
+
+.account_page_grid {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    gap: calc(var(--gap)*2);
+}
+
+.account_page_grid_col_1_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account_page_grid_col_1_menu_item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 10px 10px 0;
+    border-right: 5px solid var(--white);
+    transition: all .2s linear;
+}
+
+.account_page_grid_col_1_menu_item p:last-child{
+    transition: all .2s ease-out;
+}
+
+.account_page_grid_col_1_menu_item:hover p:last-child{
+    transform: translateX(-5px);
+}
+
+.account_page_grid_col_1_menu_item.active{
+    border-right: 5px solid var(--orange);  
+}
+
+.account_page_grid_col_1_menu_item.active p{
+    font-weight: var(--bold-font-weight);
+}
+
+.accountSlide {
+    display: none;
+}
+
+.accountSlide.active {
+    display: block;
+    animation: var(--alert-fade-time) ease-in-out 0s normal forwards 1 running accountSlide-fade-in;
+}
+
+@keyframes accountSlide-fade-in {
+    0%{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.account_page_grid_col_2_content .small_section_title {
+    line-height: 1.2;
+    padding: 0 0 30px;
+}
+
+.account_page_grid_col_2_opts_item {
+    padding: 20px 0;
+}
+
+.account_page_grid_col_2_opts_item:not(:last-of-type){
+    border-bottom: 2px solid var(--extra-light-grey);
+}
+
+.account_page_grid_col_2_opts_picture {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.account_page_grid_col_2_opts_picture_icon {
+    background: var(--user-profile-picture);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.account_page_grid_col_2_opts_picture_btns {
+    display: flex;
+    gap: 20px;
+}
+
+.account_page_grid_col_2_opts_picture_btns button, .account_page_grid_col_2_form_submit {
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
+    font-size: var(--small-font-size);
+}
+
+.account_page_grid_col_2_opts_picture_btns button:last-of-type {
+    background: var(--white);
+}
+
+.account_page_grid_col_2_opts_picture_btns button:last-of-type:hover {
+    background: var(--black);
+}
+
+.account_page_grid_col_2_opts_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap) calc(var(--gap)*1.2);
+}
+
+.account_page_grid_col_2_opts_data_input_group label{
+    color: var(--light-grey);
+}
+
+.account_page_grid_col_2_opts_data_input_group_security:first-of-type {
+    grid-column: 1 / 3;
+}
+
+.account_page_grid_col_2_opts_item .smaller_section_title{
+    padding: 0 0 20px;
+    color: var(--dark-grey);
+}
+
+.reservations_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--gap)/2);
+}
+
+.reservations_grid_row {
+    display: grid;
+    grid-template-columns: .4fr .5fr 1.1fr .3fr .4fr;
+    gap: var(--gap);   
+}
+
+.reservations_grid_row>*:not(:first-child){
+    align-items: center;
+    padding: 10px 10px 5px 0;
+}
+
+.reservations_grid_row:nth-of-type(even) {
+    background-color: var(--extra-light-grey);
+}
+
+.reservations_grid_row a:nth-of-type(2), .reservations_grid_row .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservations_grid_row .car_model {
+    font-weight: var(--regular-font-weight);
+}
+
+.car_photo{
+    height: 100%;
+}
+
+.car_photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.account_page_grid_col_2_opts_data .password_field {
+    display: flex;
+    padding: 0 0 20px;
+}
+
+.password_field input.middle_radius_input{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.password_field button {
+    border: 1px solid var(--middle-light-grey);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: var(--middle-border-radius);
+    border-bottom-right-radius: var(--middle-border-radius);
+}
+
+.password_field button svg{
+    height: 25px;
+}
+
+.reservations_grid_row_data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.reservations_grid_row_data_row {
+    display: grid;
+    grid-template-columns: .8fr .5fr 1.3fr;
+    gap: 20px;
+}
+
+.reservations_grid_row_data_row * {
+    font-size: 14px;
+}
+
+.cancel_btn_block {
+    display: flex;
+    align-items: center;
+}
+
+.cancel_btn_block .round_btn {
+    width: 100%;
+    height: 40px;
+    background: none;
+}
+
+.cancel_btn_block .round_btn:hover {
+    color: var(--orange);
+}
+
+.history_sort_form {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.history_sort_form .smaller_section_title {
+    padding: 0;
+}
+
+.cars_sort_content, .cars_sort_content p{
+    display: flex;
+    align-items: center;
+}
+
+.cars_sort_content{
+    gap: 15px;
+}
+
+.cars_sort_content select{
+    height: 30px;
+}
+
+.cars_sort_content p {
+    gap: 5px;
+}
+
+.cars_sort_content svg{
+    height: 30px;
+}
+
+
+.log_out_disclaimer {
+    padding: 0 0 20px;
+}
+
+.log_out {
+    color: red;
+    font-weight: var(--bold-font-weight);
+    font-size: var(--medium-font-size);
+}
+
+/* .account_page_grid_col_2_opts {
+    margin: 0 0 100px;
+} */
+
+
+.account_page_grid_col_2_opts_item .smaller_section_title {
+    padding: 0 0 20px;
+    color: var(--grey);
+    font-weight: 300;
+}

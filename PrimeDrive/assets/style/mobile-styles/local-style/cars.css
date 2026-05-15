@@ -1,0 +1,58 @@
+@media screen and (max-width: 1350px) {
+    .cars_content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .car_card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cars_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    /* .cars_filter_and_sort_wrapper{
+        flex-direction: column;
+        gap: 10px;
+    } */
+
+    /* .cars_filter_content, .cars_sort_content{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+    }
+
+    .cars_filter_content svg, .cars_sort_content svg{
+        display: none;
+    } */
+    .filter_ops_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    /* .cars_filter_content, .cars_sort_content{
+        grid-template-columns: 1fr 6fr;
+    } */
+}
+
+@media screen and (max-width: 720px) {
+    .cars_content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+   .filter_ops_content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* .cars_filter_content, .cars_sort_content {
+        grid-template-columns: 1fr 3fr;
+    } */
+}
