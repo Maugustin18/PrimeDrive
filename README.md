@@ -3,7 +3,6 @@
 <h2>Pentru juriu</h2>
 <ul>
     <li>Pentru deschiderea proiectului local trebuie să-l deschideți cu Live Server (extensie pentru VS)</li>
-    <li>Link-ul pentru GitHub pages: <a href="https://marius0123.github.io/taxi-tja/">https://marius0123.github.io/taxi-tja/</a></li>
     <li>Link-ul pentru GitHub: <a href="https://github.com/Maugustin18/PrimeDrive">https://github.com/Maugustin18/PrimeDrive</a></li>
 </ul>
 <hr>
